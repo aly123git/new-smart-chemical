@@ -1,0 +1,447 @@
+{%load static%}
+{%load bootstrap4%}
+
+<!DOCTYPE html>
+<html>
+<head>
+          <link href="{% static 'css/main_style.css' %}" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+        crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body class="fabtheme-parallax-1 img-fluid fabtheme-thetop">
+
+<div style="background-color: white">
+<ul>
+  <li><a class="active" href="{%url 'home:' %}">Back Home</a></li>
+
+    <li style="float:left; "><a href="#arabic" style="color:tomato">عربي</a></li>
+</ul>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<br> <br>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h2 >Our Services</h2>
+<div>
+                            <img src="/static/images/service1.jpg" alt="">
+</div>
+<br>
+
+  <div id="accordion">
+    <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+Why i choose New Smart Chemical for Pest Control Services? +        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+Hygiene and safety of our clients are our utmost priorities. Hence, every professional goes through
+        a strict quality check to analyze his expertise in the field of pest control.
+        We take pride in providing good quality pest control
+        services to our customers and we assure that our customers’ needs are taken care    </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+   Pest Control in hotels +        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+pest control is important for hotels on several levels. Customers expect to have an enjoyable stay in a pleasant environment and be safe and secure whether they are in a hotel room, bathroom, lobby, restaurant, bar, gym or other facilities in the hotel.
+As a business, hotels have a duty of care to customers, employees, contractors and other people on their premises. This means pest control activities must be carried out safely and legally, by qualified professionals.
+Hotels have to comply with a range of laws and regulations: health and safety laws, food safety laws and environmental laws. In addition, some animals that can be regarded as pests are covered by wildlife protection law.
+The most expensive way to deal with pests is to do nothing until an infestation arises!.
+      New Smart Chemical always at your disposal</div>
+
+   </div>
+    </div>
+    <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+Pest control in Restaurants +        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+Failure to control pests can result in many unhappy circumstances for your restaurant. Health code violations can shut down your business. Guests who see pests in your restaurant are unlikely to return. They will tell their friends and family about their “disgusting experience”, damaging your reputation.
+Will your business ever recover from online reviews outing your restaurant’s pest infestation? What if people get sick from the germs and bacteria spread by pests that are let to run wild in your restaurant?
+New Smart Chemical always at your disposal.
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+Pest control in Houses and Villas +        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+Pests are among the scariest things in the world, but certain pests can actually damage your house. This, in turn, can cost serious monetary outlay on repairs and damaged property. Types of pests such as rodents, ants, cockroaches, spiders, bedbugs, wood borers, and termites are found living secret lives in our homes more often than ever before. Pest control services are an awesome solution. Just because you don’t see creepy crawlies in your house doesn’t mean they’re not there.
+Preventing recurrent pest infestation will safeguard your house and family against any structural and health hazard. New Smart Chemical always at your disposal.
+
+
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+Are the materials safe for kids, pets and pregnant women? +        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      <div class="card-body">
+We use best in class chemicals approved by ministry of environment for use against target pests at
+        recommended dosages making it safe for children, pets and pregnant women.      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+Do I get any warranty cover? +        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      <div class="card-body">
+Yes. Within the contract period if you
+        have a complaint after a service; our technicians will resolve it at no extra charges.      </div>
+    </div>
+  </div>
+      <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+Pest control and environment +        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+      <div class="card-body">
+Our qualified team use authorized material, that not harm upon ecosystems or the environment.
+      With New Smart Chemical we know how to preserve ecosystem.</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<hr>
+
+<h2>We control all Pest Categories</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Insects')"> Insects</button>
+  <button class="btn" onclick="filterSelection('Reptiles')"> Reptiles</button>
+  <button class="btn" onclick="filterSelection('Birds')"> Birds </button>
+      <button class="btn" onclick="filterSelection('Animals')"> Animals </button>
+
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+    <!-- insect -->
+  <div class="column Insects">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Insects">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+    <div class="column Insects">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Insects">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+
+
+        <!-- Raptiles -->
+
+    <div class="column Reptiles">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+    <div class="column Reptiles">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Reptiles">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+        <!-- Birds -->
+    <div class="column Birds">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Birds">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+    <div class="column Birds">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Birds">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+        <!-- Animals -->
+    <div class="column Animals">
+    <div class="content">
+      <img src="/static/images/insect.jpg" alt="Mountains" style="width:70%">
+      <h4>الثعبان</h4>
+      <p>الثعبان أو الأفعى أو الحية هو حيوان زاحف من ذوات الدم البارد يتبع رتيبة Serpentes من رتبة الحرشفيات له جسم متطاول، مغطى بحراشف،
+        ولا توجد له أطراف، أو أذنين خارجيتين، وجفون ولكن ثمة حواف في جسمه</p>
+    </div>
+  </div>
+
+    <div class="column Animals">
+    <div class="content">
+    <img src="/static/images/insect.jpg" alt="Lights" style="width:70%">
+      <h4>ٍSnakes</h4>
+      <p>If you encounter a venomous snake in your yard, take it seriously.
+        The snake should be removed to ensure that no one, including pets, gets hurt.</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
