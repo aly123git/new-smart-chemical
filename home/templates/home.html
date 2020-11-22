@@ -30,69 +30,59 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'css/reset.css' %}"> <!-- CSS reset -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Resource style -->
+	<script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
 		<!-- END OF CSS -->
 	</head>
 	<!-- END OF HEAD -->
 	<body id="fabtheme-body" >
 		<!-- NAVIGATION BAR -->
-		<nav id="fabtheme-navbar" class="navbar navbar-expand-lg navbar-expand-xl navbar-dark fixed-top">
-			<a class="navbar-brand" href="index.html">
-				<!-- WEBSITE LOGO -->
-				<a href="#"><p style="position:fixed; left:2%">عربي</p></a>
+			
+		<nav class="cd-stretchy-nav p-0" >
+			<a class="cd-nav-trigger" href="#0" >
+				
+				<span aria-hidden="true" ></span>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expands" aria-controls="expands" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="expands">
-				<ul class="navbar-nav text-center ml-auto">
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#services">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#partners">Partners</a>
-					</li>
+	
+			<ul style="background-color: #9acd91; border-radius: 5%;">
+				<li><a href="#home" class="active"><span style="color:white; font-weight:400;">Home</span></a></li>
+				<li><a href="#about" class="active"><span style="color:white; font-weight:400;">about</span></a></li>				
+				<li><a href="#services" class="active"><span style="color:white; font-weight:400;">services</span></a></li>				
+				<li><a href="#certificates" class="active"><span style="color:white; font-weight:400;">certificates</span></a></li>				
+				<li><a href="#contact" class="active"><span style="color:white; font-weight:400;">contact</span></a></li>				
 
-
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#certificates">Certificates</a>
-					</li>
-							<!--
-
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#team">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#blog">Blog</a>
-					</li>
- -->
-
-					<li class="nav-item">
-						<a class="nav-link fabtheme-nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
+						</ul>
+	
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
 		</nav>
+	</header>
+	
+	<main class="cd-main-content">
+		<!-- main content here -->
+	</main>
+		
 		<!-- END OF NAVIGATION BAR -->
 		<!-- HEADER -->
 	<div>
 		<header id="home" class="fabtheme-parallax-1 img-fluid fabtheme-thetop">
+			
 			<div class="container-fluid h-100">
 				<div class="row h-100 align-items-center justify-content-start">
 					<div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 pl-0">
 						<div class="p-3 p-sm-4 p-md-4 p-lg-5 p-xl-5 text-left wow fadeInLeft fabtheme-headings" data-wow-duration="3s">
-							<br>
 							<h1 style="color: red; font-weight:bold">New Smart Chemical</h1>
 							<h3 class="pt-2 mb-0" style="color: white;">the first choice to Care and clear</h3>
 							<p class="pt-2 mb-0" style="color: white;">We Know How To Control Pest And preserve ecosystem.</p>
 <br>
-                            <img src="/static/images/head1.jpg" alt="">
+                            <img src="/static/images/head1.jpg" alt="" class="img-fluid max-width: 100%">
 
 						</div>
 					</div>
@@ -100,23 +90,23 @@
 			</div>
 </header>
 </div>
-	
+
 		<!-- END OF HEADER -->
 		<!-- ABOUT -->
 		<div>
-			
+
 		<section id="about" class="fabtheme-link-show">
 			<div class="container-fluid h-100">
 				<div class="row h-100 align-items-center mt-5 justify-content-end">
-					<div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 pr-0">
+					<div class="col-11 col-sm-11 col-md-6 col-lg-10 col-xl-9 pr-0">
 						<div class="p-3 p-sm-4 p-md-4 p-lg-5 p-xl-5 text-right wow fadeInRight fabtheme-about" data-wow-duration="3s">
 							<h2>ABOUT US</h2>
 
-							<img src="/static/images/about.jpg" alt="about us" style="float: left; width: 50%;">
+							<img src="/static/images/about.jpg" alt="about us" class="img-fluid max-width: 100%" >
 
 								<br>
 							<p class="py-2">With changes to your everyday lifestyle, you can help protect the planet and its ecosystems. With "New Smart Chemical" We Know How To Pest Control and Preserve Ecosystem.</p>
-<br> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
 						</div>
 					</div>
 				</div>
@@ -158,7 +148,7 @@
 		</div>
 				<!-- END OF COUNT -->
 		<!-- Ethical -->
-	<div> 
+	<div>
 
 		<section id="" class="fabtheme-link-show">
 			<div class="container-fluid h-100">
@@ -171,7 +161,7 @@
 							<div class="card-columns fabtheme-card-columns">
 								<div class="card fabtheme-services-2">
 									<div class="card-body">
-										<img src="/static/images/vision.jpg" alt="">
+										<img src="/static/images/vision.jpg" alt="" class="img-fluid max-width: 100%">
 										<h4 class="card-title py-3">Our vision</h4>
 										<p class="card-text">With changes to your everyday lifestyle, you can help protect the planet and its ecosystems.
 											With "New Smart Chemical" We Know How To Pest Control and Preserve Ecosystem..</p>
@@ -179,7 +169,7 @@
 								</div>
 								<div class="card fabtheme-services-2">
 									<div class="card-body">
-										<img src="/static/images/mission.jpg" alt="">
+										<img src="/static/images/mission.jpg" alt="" class="img-fluid max-width: 100%">
 										<h4 class="card-title py-3">Our mission</h4>
 										<p class="card-text">With changes to your everyday lifestyle, you can help protect the planet and its ecosystems.
 											With "New Smart Chemical" We Know How To Pest Control and Preserve Ecosystem..</p>
@@ -187,7 +177,7 @@
 								</div>
 								<div class="card fabtheme-services-2">
 									<div class="card-body">
-										<img src="/static/images/goals.jpg" alt="">
+										<img src="/static/images/goals.jpg" alt="" class="img-fluid max-width: 100%">
 										<h4 class="card-title py-3">Our goals</h4>
 										<p class="card-text">With changes to your everyday lifestyle, you can help protect the planet and its ecosystems.
 											With "New Smart Chemical" We Know How To Pest Control and Preserve Ecosystem..</p>
@@ -199,7 +189,7 @@
 				</div>
 			</div>
 		</section>
-		</div> 
+		</div>
 		<!-- END OF Ethic -->
 
 
@@ -217,12 +207,12 @@
 
 					<p class="pt-2 mb-0" style="color: white;">With changes to your everyday lifestyle, you can help protect the planet and its ecosystems.
 						With "New Smart Chemical" We Know How To Pest Control and Preserve Ecosystem..</p>
-						<img src="/static/images/service1.jpg "> <br> <br>
+						<img src="/static/images/service1.jpg " class="img-fluid max-width: 100%"> <br> <br>
 
 							<a href="{%url 'home:services' %}" class="btn fabtheme-button">Know more about our services...</a>
 					<br> 					<br>
 
-<!-- comparison 
+<!-- comparison
 
 				<div class="img-comp-container">
 					<div class="img-comp-img">
@@ -240,7 +230,7 @@
 		</div>
 	</div>
 </section>
-</div> 
+</div>
 <!-- end services -->
 
 		<!-- partners -->
@@ -318,7 +308,7 @@
 			</div>
 		</section>
 		<!-- END OF partners -->
-</div> 
+</div>
 
 
 
@@ -553,61 +543,68 @@
 		  </div>
 		  </div>
 </section>
-</div> 
+</div>
 
 <div>
-		<!-- CONTACT -->
-		<section id="contact" class="fabtheme-link-show">
-			<div class="container-fluid h-100">
-				<div class="row h-100 align-items-center mt-5 justify-content-end">
-					<div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 pr-0">
-						<div class="p-3 p-sm-4 p-md-4 p-lg-5 p-xl-5 text-right wow fadeInRight fabtheme-contact" data-wow-duration="3s">
-							<h2>Contact</h2>
-							<p class="py-2">our pleasure </p>
-							<form id="form" class="contact-form" method="post" action="bat/contact.php">
-								<div class="row pt-2">
-									<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-										<a href="mailto: abc@example.com" class="fabtheme-link-2">
-											<i class="fas fa-envelope-open"></i>
-											<p>example@gmail.com</p>
-										</a>
-										<i class="fas fa-phone-alt"></i>
-						<p><a href="tel:+201012345">+201012345</a></p>
-										<i class="fas fa-map-marker"></i>
-										<p>Hurghada; Eldahar; Elnasr St.</p>
-										<i class="fas fa-clock"></i>
-										<p>Saturday-Thursday: 9:00 AM to 5:00 PM, Friday: Holidays</p>
-										<div class="col-12 py-2 pr-0">
-											<a href="https://www.instagram.com" class="fabtheme-link-2"><i class="fab fa-instagram fa-lg mr-2"></i></a>
-											<a href="https://www.facebook.com" class="fabtheme-link-2"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
-											<a href="https://www.twitter.com" class="fabtheme-link-2"><i class="fab fa-twitter fa-lg mr-2"></i></a>
-											<a href="https://www.whatsapp.com" class="fabtheme-link-2"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
-											<a href="https://www.linkedin.com" class="fabtheme-link-2"><i class="fab fa-linkedin"></i></a>
-										</div>
-									</div>
-									<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-
-										<div class="form-group fabtheme-field">
-											<label for="form_email">Email *</label>
-											<input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required">
-										</div>
-										<div class="form-group fabtheme-field">
-											<label for="form_message">Message</label>
-											<textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
-										</div>
-										<div class="form-group fabtheme-field">
-											<input type="submit" class="btn fabtheme-button" value="Send message">
-										</div>
-									</div>
+	<!-- CONTACT -->
+	<section id="contact" class="fabtheme-link-show">
+		<div class="container-fluid h-100">
+			<div class="row h-100 align-items-center mt-5 justify-content-end">
+				<div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 pr-0">
+					<div class="p-3 p-sm-4 p-md-4 p-lg-5 p-xl-5 text-right wow fadeInRight fabtheme-contact" data-wow-duration="3s">
+						<h2>Contact</h2>
+						<p class="py-2">our pleasure </p>
+						<form id="form" class="contact-form" method="post" action="bat/contact.php">
+							<div class="row pt-2">
+								<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+									<a href="mailto: abc@example.com" class="fabtheme-link-2">
+										<i class="fas fa-envelope-open"></i>
+										<p>example@gmail.com</p>
+									</a>
+									<i class="fas fa-phone-alt"></i>
+					<p><a href="tel:+201012345">+201012345</a></p>
+									<i class="fas fa-map-marker"></i>
+									<p>Hurghada; Eldahar; Elnasr St.</p>
+									<i class="fas fa-clock"></i>
+									<p>Saturday-Thursday: 9:00 AM to 5:00 PM, Friday: Holidays</p>
+									
 								</div>
-							</form>
-						</div>
+								<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+									<a href="mailto: abc@example.com">
+									<img src="/static/images/contact.jpg" alt=""> 
+								</a>
+									<!--
+									<div class="form-group fabtheme-field">
+										<label for="form_email">Email *</label>
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required">
+									</div>
+									<div class="form-group fabtheme-field">
+										<label for="form_message">Message</label>
+										<textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
+									</div>
+									<div class="form-group fabtheme-field">
+										<input type="submit" class="btn fabtheme-button" value="Send message">
+									</div>
+								-->
+
+								<div class="col-12 py-2 pr-0">
+									<a href="https://www.instagram.com" class="fabtheme-link-2"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+									<a href="https://www.facebook.com" class="fabtheme-link-2"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+									<a href="https://www.twitter.com" class="fabtheme-link-2"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+									<a href="https://www.whatsapp.com" class="fabtheme-link-2"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+									<a href="https://www.linkedin.com" class="fabtheme-link-2"><i class="fab fa-linkedin"></i></a>
+								</div>
+								
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</section>
-		</div> 
-		<!-- END OF CONTACT -->
+		</div>
+	</section>
+	</div>
+	<!-- END OF CONTACT -->
 		<!-- NEWSLETTER -->
 
 		<!-- END OF NEWSLETTER -->
@@ -684,13 +681,14 @@
 			</div>
 		</section>
 
-		<!-- SCROLL TOP -->
+		<!-- SCROLL TOP 
 		<div class="fabtheme-scrolltop">
 			<div class="fabtheme-scroll">
 				<i class="fas fa-angle-up"></i>
 			</div>
 		</div>
-		<!-- END OF SCROLL TOP -->
+		END OF SCROLL TOP -->
+
         <!-- JQUERY JS -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -714,6 +712,8 @@
 			/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
 			initComparisons();
 			</script>
+			<script src="{% static 'js/jquery-2.1.4.js'%}"></script>
+			<script src="{% static 'js/main.js'%}"></script> <!-- Resource jQuery -->
 		<!-- END OF JQUERY JS -->
     </body>
 </html>

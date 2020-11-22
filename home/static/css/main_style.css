@@ -114,7 +114,7 @@ h1,h2,h3{
 	border-right: 10px solid #0D1821;
 }
 .fabtheme-services-2{
-	background-color:whitesmoke;
+	background-color:tomato;
 	color: #000000;
 	border: 0;
 	border-radius: 0;
@@ -344,6 +344,7 @@ h1,h2,h3{
 }
 /* END OF IMAGES ZOOM IN */
 /* SCROLL TOP */
+/* SCROLL TOP */
 .fabtheme-scrolltop{
 	display: none;
 	width: 100%;
@@ -373,6 +374,7 @@ h1,h2,h3{
 	margin-left: 1px;
 	transition: 0.5s;
 }
+/* END OF SCROLL TOP */
 /* END OF SCROLL TOP */
 /* INPUT */
 .fabtheme-field input{
